@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.special-keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .spc-key {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .spc-key:hover {
+    background-color: #efd269;
+  }
+}
+
+body {
+  background-color: #d6ecf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.calc-container {
+  width: 25%;
+  margin: auto;
+  border-radius: 16px;
+  background-color: #575757;
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 45px;
+  background-color: #99c089;
+  padding: 8px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  justify-content: end;
+  font-size: 30px;
+  color: #4b4b4b;
+  overflow: hidden;
+}
+
+.keypad-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.key {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.div-operator,
+.mult-operator,
+.sub-operator,
+.add-operator {
+  background-color: #b5c1da;
+}
+
+.result {
+  background-color: #f5a34d;
+  transition: background-color 0.2s ease;
+}
+
+.key:hover {
+  background-color: #cd9d9d;
+}
+.result:hover {
+  background-color: #cfe9a7;
+}
